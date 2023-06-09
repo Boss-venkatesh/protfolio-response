@@ -1,0 +1,288 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+  --primary-white:#fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-blue:#4c5fda;
+  --primary-green: #25d99f;
+}
+/* -----------------Navbar-------------- */
+nav{
+  z-index: 2;
+}
+nav.navbar{
+  position: fixed;
+  width: 100%;
+}
+.logo{
+  /* width: 16.25rem; */
+  width: 78px;
+  margin-left: 40px;
+}
+
+/* ------Menu Links------ */
+nav a.nav-link{
+  font-size: .8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+nav ul li{
+  text-transform: uppercase;
+}
+.navbar-nav >li >.nav-link {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+/* .navbar-brand{
+  max-width: 17.25rem;
+ padding: 0 !important;
+ height: 6rem !important;
+} */
+
+.navbar-nav > li >.nav-link.active, .navbar-nav > li >.nav-link:focus{
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+.navbar-nav > li > .nav-link:hover{
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+/* ------------Header--------- */
+.header-wrapper{
+  position: relative;
+  background: url(wall-laptop7.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.main-info h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* ----------Typed--------- */
+.typed-text{
+  font-size: 2rem;
+  color: #425982;
+}
+
+
+/* ----------Header Main Offer Buuton--------- */
+
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+}
+.btn-main-offer:hover{
+   text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+/* ----------particles-------- */
+/* ----------About-------- */
+
+.about-heading{
+  text-align:center;
+  margin-top: 10vh;
+  color: #f3d156;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-para{
+  padding: 10px;
+}
+.rounded-circle{
+  width: 344px;
+  height: 326px;
+  border: 3px solid #425982;
+  padding: 5px;
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+  .rounded-circle{
+    margin-left: 167px;
+  }
+  .header-wrapper{
+    height: 50vh;
+  }
+}
+@media  screen and (max-width: 820px) {
+  .rounded-circle{
+    margin-left: 167px;
+  }
+  .header-wrapper{
+    height: 50vh;
+  }
+}
+@media  screen and (max-width: 540px) {
+  .rounded-circle{
+    margin-left:15px;
+    width: 314px;
+    height: 308px;
+  }
+  .header-wrapper{
+    height: 70vh;
+  }
+}
+
+
+
+/* ----------About-------- */
+
+/* -------particles--------- */
+#tsparticles{
+  width: 100%;
+  height: 100%;
+}
+
+/* --------services---------- */
+.service-wrapper{
+  background-color: #697c9e;
+  padding-bottom: 10px;
+}
+.service-heading{
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8vh;
+  color: #fff;
+}
+
+
+/* --------Card---------- */
+#cards{
+  text-align: center;
+  margin: 20px 0px 0px 20px;
+  padding: 30px;
+  width: 18rem;
+  border-bottom: 6px solid #f9ab00;
+}
+#cards:hover{
+  text-align: center;
+  margin: 20px 0px 0px 20px;
+  padding: 30px;
+  width: 18rem;
+  border-bottom: 6px solid #000;
+  background-color: #f9ab00;
+}
+#cards:hover p{
+  color: #fff;
+}
+.dot{
+  background-color: #f9ab00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 90px;
+  margin-top: -11px;
+  color: #fff;
+}
+#cards:hover .dot{
+  background-color:white ;
+  color: #000;
+}
+.icons{
+  margin-top: 11px;
+}
+.services-space{
+  padding: 40px;
+}
+/* --------Footer------ */
+.foot-icons{
+  color: #fff;
+}
+.foot-icons:hover{
+  color: #f9ab00
+}
+
+.text-uppercase{
+  color: #f9ab00;
+}
+.text-p{
+  color: #fff;
+}
+.text-p-a{
+  color: #fff;
+}
+.text-p-f{
+  color: #fff;
+  
+}
+.foot-icons-f{
+  color: #fff;
+  
+}
+.text-copy{
+  color: #fff; 
+}
+.text-copy:hover{
+  color: #000;
+  background-color: #f9ab00;
+}
+
+/*------------Features--------- */
+.feature-head{
+  text-align: center;
+  margin-top: 50px;
+  color: #25d99f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.feature-para{
+  text-align: center;
+}
+.feature-icon{
+  color: #25d99f;
+  padding: 10px 16px;
+}
+.round-cir{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #25d99f;
+}
+.read-btn{
+  color: white;
+  background-color: #25d99f;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 13px;
+  border: #25d99f;
+}
+.read-btn:hover{
+  background-color: #0d6efd;
+}
+.features-box{
+  padding-bottom: 100px;
+}
+/*------------Features--------- */
